@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">Mastery Of Multiplication</string>
+    <string name="primary">Primary</string>
+    <string name="training">Training</string>
+    <string name="mastery">Mastery</string>
+    <string name="challenge">Challenge</string>
+    <string name="challenge10">Challenge 10 questions</string>
+    <string name="learn">Learn</string>
+    <string name="practice">Practice</string>
+    <!--string name="desc">Please choose the stage of multiplication that you want to learn</string-->
+    <string name="random">Random</string>
+
+    <string name="timestables">%1$d times table</string>
+
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="fore">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="zero">0</string>
+    <string name="times">%1$dx%2$d</string>
+
+    <string name="times_sign">x</string>
+    <string name="equal">=</string>
+    <string name="left">&lt;&lt;</string>
+    <string name="right">&gt;&gt;</string>
+    <string name="ok">OK</string>
+
+    <string name="remaining">rem : %1$d</string>
+
+    <string name="keyword1">EntryMode</string>
+    <string name="keyword2">TargetRow</string>
+    <string name="keyword3">RandomMode</string>
+    <string name="keyword4">CorrectSize</string>
+    <string name="keyword5">QuestionSize</string>
+    <string name="keyword6">Time</string>
+    <string name="keyword7">CheckList</string>
+
+    <!--メイン画面で戻るボタンを押下したときのメッセージ-->
+    <string name="final_title">Exit menu</string>
+    <string name="final_message">Do you want to exit the application?</string>
+    <string name="final_ok">Exit</string>
+    <string name="final_cancel">Cancel</string>
+
+    <!--Practice画面に入ったときのメッセージ-->
+    <string name="start_title">Are You Ready?</string>
+    <string name="start_message">Now start the [%1$s].\nThere are %2$d questions in total.\nAre you ready?</string>
+    <string name="start_ok">Start!</string>
+    <string name="start_cancel">Cancel</string>
+
+    <!--Practice画面に入ったときのモード選択メッセージ-->
+    <string name="select_title">Mode select</string>
+    <string name="short_mode">Short Mode</string>
+    <string name="full_mode">Full Mode</string>
+    <string name="selected">You selected the [%1$s]</string>
+    <string name="select_ok">OK!</string>
+
+    <!--Practice画面で戻るボタンを押下したときのメッセージ-->
+    <string name="pause_title">Pause</string>
+    <string name="pause_message">Do you end the %1$s? Or you want to continue?</string>
+    <string name="pause_ok">End</string>
+    <string name="pause_cancel">Continue</string>
+
+    <!--Practice画面で問題が終了ときのメッセージ-->
+    <string name="end_title">Finished</string>
+    <string name="end_message">Well done!!</string>
+    <string name="end_ok">Next</string>
+
+    <string name="certification">Certification: &lt;%1$s&gt;</string>
+    <string name="initialize">Initialize</string>
+    <string name="qestion_initialize">The certified title will be initialized.\nIs is OK?</string>
+
+    <string name="accuracy_rate">Accuracy rate</string>
+    <string name="answer_time">Answer time per question</string>
+    <string name="time_unit">min     :     sec     .     ms</string>
+
+    <string name="rate1">%1$d/%2$d &gt; %3$s %%</string>
+    <string name="rate2">%1$d/%2$d &gt;&gt; %3$s</string>
+
+    <string name="check">Check your mistake</string>
+    <string name="back">back</string>
+
+    <!--結果メッセージ-->
+    <string name="result_super_all">What that splendor!</string>
+    <string name="result_all">All the questions correct answer! \nGood job!</string>
+    <string name="one_more_push">Close! So close!</string>
+    <string name="shame">Keep trying!</string>
+    <string name="nothing">Try again!</string>
+
+    <!--間違いチェック-->
+    <string name="check_title">Check</string>
+    <string name="check_close">Close</string>
+
+    <!--記録更新-->
+    <string name="update_record_title">Update record</string>
+    <string name="update_record_share">Let\'s be proud of the record to everyone!</string>
+    <string name="record">&lt;%1$s&gt;</string>
+    <string name="twitter">Twitter</string>
+    <string name="share_message">I got the title of &lt;%1$s&gt; in multiplication app!\n#%2$s\nhttps://goo.gl/l2i4FE</string>
+    <string name="twitter_url">http://twitter.com/share?text=%1$s</string>
+
+    <string name="count_learn">count_learn</string>
+    <string name="count_induce">count_induce</string>
+
+    <string name="induce_title">Thank you for always using this App</string>
+    <string name="induce_message">I would be pleased if you could evaluate it and comments, if you have any requests or dissatisfaction about usability and specifications.\nI look forward to working with you.</string>
+    <string name="induce_ok">Evaluate</string>
+    <string name="induce_cancel">Later</string>
+
+    <string name="adUnitId">ca-app-pub-1485554329820885/1297920255</string>
+    <string name="adUnitInterId">ca-app-pub-1485554329820885/1010215453</string>
+    <string name="adUnitTestId">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="version">version : %1$s</string>
+
+</resources>

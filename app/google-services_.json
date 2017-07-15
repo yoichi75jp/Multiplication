@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "21689545516",
+    "project_id": "firebase-multiplication"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21689545516:android:86811dcdba212975",
+        "android_client_info": {
+          "package_name": "com.aufthesis.multiplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAC3NQUheNSVqII7VqS-gjFi8HoabMsmW8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-64731121-2"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE4E1"
+    android:gravity="center">
+
+    <ImageView
+        android:contentDescription="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/school"/>
+
+    <TextView
+        android:id="@+id/record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:paddingTop="15sp"
+        android:paddingBottom="15sp"
+        android:background="@drawable/corner_box2"
+        android:gravity="top|center"
+        android:textSize="40sp"
+        android:textColor="#FFFF00"
+        android:text="@string/record"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:textColor="#008000"
+        android:textSize="15sp"
+        android:text="@string/update_record_share"/>
+
+    <ImageButton
+        android:contentDescription="@string/update_record_share"
+        android:id="@+id/twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/twitter_social_icon_circle_color"
+        android:background="#00000000"
+        android:text="@string/twitter"/>
+
+</LinearLayout>

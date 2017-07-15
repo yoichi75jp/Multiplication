@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">身につく 九九</string>
+    <string name="primary">入門</string>
+    <string name="training">修行</string>
+    <string name="mastery">体得</string>
+    <string name="challenge">挑戦</string>
+    <string name="challenge10">チャレンジ10問</string>
+    <string name="learn">おぼえる</string>
+    <string name="practice">練習する</string>
+    <!--string name="desc">おぼえたいかけざんのだんをえらんでね</string-->
+    <string name="random">ランダム</string>
+
+    <string name="timestables">%1$d の段</string>
+
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="fore">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="zero">0</string>
+    <!--string name="more">もっと</string-->
+    <string name="times">%1$d✕%2$d</string>
+
+    <string name="times_sign">✕</string>
+    <string name="equal">＝</string>
+    <string name="left">◀</string>
+    <string name="right">▶</string>
+    <string name="ok">OK</string>
+
+    <string name="remaining">残り : %1$d</string>
+
+    <string name="keyword1">EntryMode</string>
+    <string name="keyword2">TargetRow</string>
+    <string name="keyword3">RandomMode</string>
+    <string name="keyword4">CorrectSize</string>
+    <string name="keyword5">QuestionSize</string>
+    <string name="keyword6">Time</string>
+    <string name="keyword7">CheckList</string>
+
+    <!--メイン画面で戻るボタンを押下したときのメッセージ-->
+    <string name="final_title">終了メニュー</string>
+    <string name="final_message">アプリケーションを終了しますか？</string>
+    <string name="final_ok">おわる</string>
+    <string name="final_cancel">キャンセル</string>
+
+    <!--Practice画面に入ったときのメッセージ-->
+    <string name="start_title">スタート</string>
+    <string name="start_message">これから【%1$s】を開始します。\n全部で%2$d問あります。\nじゅんびはいいですか？</string>
+    <string name="start_ok">はじめ！!</string>
+    <string name="start_cancel">やめる</string>
+
+    <!--Practice画面に入ったときのモード選択メッセージ-->
+    <string name="select_title">モード選択</string>
+    <string name="short_mode">ショートモード</string>
+    <string name="full_mode">フルモード</string>
+    <string name="selected">[%1$s]を選択しました</string>
+    <string name="select_ok">OK!</string>
+
+    <!--Practice画面で戻るボタンを押下したときのメッセージ-->
+    <string name="pause_title">ストップ</string>
+    <string name="pause_message">%1$sをおわりますか？それともつづけますか？</string>
+    <string name="pause_ok">おわる</string>
+    <string name="pause_cancel">つづける</string>
+
+    <!--Practice画面で問題が終了ときのメッセージ-->
+    <string name="end_title">終了</string>
+    <string name="end_message">おつかれさまでした！</string>
+    <string name="end_ok">次へ</string>
+
+    <string name="certification">認定：【%1$s】</string>
+    <string name="initialize">初期化する</string>
+    <string name="qestion_initialize">認定された称号が初期化されます。\nよろしいですか？</string>
+
+    <string name="accuracy_rate">正解率</string>
+    <string name="answer_time">1問当たりの回答時間</string>
+    <string name="time_unit">分     :     秒     .     ミリ秒</string>
+
+    <string name="rate1">%1$d/%2$d ▶ %3$s ％</string>
+    <string name="rate2">%1$d/%2$d &gt;&gt; %3$s</string>
+
+    <string name="check">間違えた問題を確認</string>
+    <string name="back">もどる</string>
+
+    <!--結果メッセージ-->
+    <string name="result_super_all">すばらしい!\nなんという速さと正確さ！</string>
+    <string name="result_all">全問正解！\nよくできました！</string>
+    <string name="one_more_push">おしい！\nあと1問！</string>
+    <string name="shame">がんばりましょう。</string>
+    <string name="nothing">ダメだね、やりなおし！</string>
+
+    <!--間違いチェック-->
+    <string name="check_title">かくにん</string>
+    <string name="check_close">とじる</string>
+
+    <!--記録更新-->
+    <string name="update_record_title">記録更新</string>
+    <string name="update_record_share">みんなに記録を自慢しちゃおう！</string>
+    <string name="record">【%1$s】</string>
+    <string name="twitter">Twitter</string>
+    <string name="share_message">九九アプリで【%1$s】の称号を得ました！\n#%2$s\nhttps://goo.gl/ddCwE6</string>
+    <string name="twitter_url">http://twitter.com/share?text=%1$s</string>
+
+    <string name="count_learn">count_learn</string>
+    <string name="count_induce">count_induce</string>
+
+    <string name="induce_title">いつもご利用ありがとうございます</string>
+    <string name="induce_message">操作性や仕様について、ご要望またはご不満な点などありましたらコメントとご評価頂ければ幸いです。\n今後ともよろしくお願いします。</string>
+    <string name="induce_ok">評価する</string>
+    <string name="induce_cancel">後で</string>
+
+    <string name="adUnitId">ca-app-pub-1485554329820885/1297920255</string>
+    <string name="adUnitInterId">ca-app-pub-1485554329820885/1010215453</string>
+    <string name="adUnitTestId">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="version">バージョン : %1$s</string>
+
+</resources>
