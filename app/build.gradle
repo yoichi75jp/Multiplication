@@ -29,11 +29,11 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation 'junit:junit:4.12'
-    implementation 'com.android.support:appcompat-v7:26.0.0'
-    implementation 'com.google.android.gms:play-services-analytics:11.0.4'
-    implementation 'com.google.firebase:firebase-core:11.0.4'  // analyticsを実装
-    implementation 'com.google.firebase:firebase-crash:11.0.4' // crashを実装
-    implementation 'com.google.firebase:firebase-ads:11.0.4'
-    implementation 'com.google.firebase:firebase-messaging:11.0.4'
+    implementation 'com.android.support:appcompat-v7:26.0.1'
+    implementation 'com.google.android.gms:play-services-analytics:11.2.0'
+    implementation 'com.google.firebase:firebase-core:11.2.0'  // analyticsを実装
+    implementation 'com.google.firebase:firebase-crash:11.2.0' // crashを実装
+    implementation 'com.google.firebase:firebase-ads:11.2.0'
+    implementation 'com.google.firebase:firebase-messaging:11.2.0'
 }
 apply plugin: 'com.google.gms.google-services'
