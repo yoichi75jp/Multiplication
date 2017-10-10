@@ -111,7 +111,7 @@ public class PracticeActivity extends Activity implements View.OnClickListener, 
         // Masteryのときの処理
         if(m_entryMode.equals(getString(R.string.mastery)))
         {
-            ImageView image = (ImageView)findViewById(R.id.mode_image);
+            ImageView image = findViewById(R.id.mode_image);
             image.setImageResource(R.drawable.mastery_img);
         }
 
@@ -149,24 +149,24 @@ public class PracticeActivity extends Activity implements View.OnClickListener, 
                 });
             }
         }
-        Button button = (Button)findViewById(R.id.back);
+        Button button = findViewById(R.id.back);
         button.setOnClickListener(this);
-        button = (Button)findViewById(R.id.forward);
+        button = findViewById(R.id.forward);
         button.setOnClickListener(this);
         button.setVisibility(View.INVISIBLE);   // Hardモードで解禁?
-        button = (Button)findViewById(R.id.ok);
+        button = findViewById(R.id.ok);
         button.setOnClickListener(this);
         button.setTypeface(Typeface.DEFAULT_BOLD);
 
-        m_answerText = (TextView)findViewById(R.id.answer);
-        m_num1Text = (TextView)findViewById(R.id.num1);
-        m_num2Text = (TextView)findViewById(R.id.num2);
-        m_timerText = (TextView)findViewById(R.id.count_time);
+        m_answerText = findViewById(R.id.answer);
+        m_num1Text = findViewById(R.id.num1);
+        m_num2Text = findViewById(R.id.num2);
+        m_timerText = findViewById(R.id.count_time);
         m_timerText.setText(m_dataFormat.format(0));
 
-        m_correctCountText = (TextView)findViewById(R.id.correct_count);
+        m_correctCountText = findViewById(R.id.correct_count);
         m_correctCountText.setText(String.valueOf(0));
-        m_wrongCountText = (TextView)findViewById(R.id.wrong_count);
+        m_wrongCountText = findViewById(R.id.wrong_count);
         m_wrongCountText.setText(String.valueOf(0));
 
         m_correctLayout = (LinearLayout)findViewById(R.id.correct_layout);
@@ -267,7 +267,7 @@ public class PracticeActivity extends Activity implements View.OnClickListener, 
     private void setChallengeMode()
     {
         // Imageを切り替える
-        ImageView image = (ImageView)findViewById(R.id.mode_image);
+        ImageView image = findViewById(R.id.mode_image);
         image.setImageResource(R.drawable.muscles_image);
 
         // 計算式を10問にする

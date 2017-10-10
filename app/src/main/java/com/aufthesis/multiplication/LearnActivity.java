@@ -64,7 +64,7 @@ public class LearnActivity extends Activity implements View.OnClickListener {
         Intent intent = getIntent();
         m_targetRow = intent.getExtras().getInt(getString(R.string.keyword2));
 
-        m_answerText = (TextView)findViewById(R.id.answer);
+        m_answerText = findViewById(R.id.answer);
         m_answerText.setTypeface(Typeface.DEFAULT_BOLD);
 
         m_prefs = getSharedPreferences(getPackageName(), Context.MODE_PRIVATE);
@@ -72,7 +72,7 @@ public class LearnActivity extends Activity implements View.OnClickListener {
         m_columnSize = m_maxRow == 20 ? 4 : 3;
         m_rowSize = m_maxRow == 9 ? 3 : m_maxRow == 12 ? 4 : 5;
         int count = 0;
-        LinearLayout layout = (LinearLayout)findViewById(R.id.button_placement);
+        LinearLayout layout = findViewById(R.id.button_placement);
         for(int row = 1; row <= m_rowSize; row++)
         {
             LinearLayout rowLayout = new LinearLayout(this);
@@ -101,7 +101,7 @@ public class LearnActivity extends Activity implements View.OnClickListener {
             layout.addView(rowLayout);
         }
 
-        ImageView backImage = (ImageView)findViewById(R.id.back);
+        ImageView backImage = findViewById(R.id.back);
         backImage.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View v) {
@@ -114,7 +114,7 @@ public class LearnActivity extends Activity implements View.OnClickListener {
                     }
                 }
         );
-        ImageView forwardImage = (ImageView)findViewById(R.id.forward);
+        ImageView forwardImage = findViewById(R.id.forward);
         forwardImage.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View v) {
@@ -127,7 +127,7 @@ public class LearnActivity extends Activity implements View.OnClickListener {
                     }
                 }
         );
-        ImageView mouthImage = (ImageView)findViewById(R.id.mouth);
+        ImageView mouthImage = findViewById(R.id.mouth);
         mouthImage.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View v) {
@@ -173,7 +173,7 @@ public class LearnActivity extends Activity implements View.OnClickListener {
             for(int column = 1; column <= m_columnSize; column++)
             {
                 count++;
-                Button button = (Button)findViewById(count);
+                Button button = findViewById(count);
                 if(button != null)
                 {
                     button.setText(getString(R.string.times, m_targetRow, count));
@@ -213,7 +213,7 @@ public class LearnActivity extends Activity implements View.OnClickListener {
             for(int column = 1; column <= m_columnSize; column++)
             {
                 count++;
-                Button button = (Button)findViewById(count);
+                Button button = findViewById(count);
                 if(button != null)
                     button.setBackgroundColor(m_defaultColor);
             }

@@ -42,7 +42,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
         // Initialize the Mobile Ads SDK.
         MobileAds.initialize(this, "ca-app-pub-1485554329820885~5867720659");
 
-        TextView versionText = (TextView)findViewById(R.id.version_txt);
+        TextView versionText = findViewById(R.id.version_txt);
         try
         {
             String sPackageName = getPackageName();
@@ -56,10 +56,10 @@ public class MainActivity extends Activity implements View.OnClickListener{
             versionText.setText("");
         }
 
-        Button button1 = (Button)findViewById(R.id.primary);
-        Button button2 = (Button)findViewById(R.id.training);
-        Button button3 = (Button)findViewById(R.id.mastery);
-        Button button4 = (Button)findViewById(R.id.challenge_questions);
+        Button button1 = findViewById(R.id.primary);
+        Button button2 = findViewById(R.id.training);
+        Button button3 = findViewById(R.id.mastery);
+        Button button4 = findViewById(R.id.challenge_questions);
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
@@ -67,12 +67,12 @@ public class MainActivity extends Activity implements View.OnClickListener{
 
         if(Locale.getDefault().toString().equals(Locale.JAPAN.toString()))
         {
-            ImageView logoImage = (ImageView)findViewById(R.id.logo);
+            ImageView logoImage = findViewById(R.id.logo);
             logoImage.setImageResource(R.drawable.timestable_logo_ja);
         }
 
         //バナー広告
-        m_AdView = (AdView) findViewById(R.id.adView2);
+        m_AdView = findViewById(R.id.adView2);
         AdRequest adRequest = new AdRequest.Builder().build();
         m_AdView.loadAd(adRequest);
 

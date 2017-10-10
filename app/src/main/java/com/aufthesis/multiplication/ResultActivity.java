@@ -75,27 +75,27 @@ public class ResultActivity extends Activity implements View.OnClickListener {
         float prePerSec = m_prefs.getFloat("per_sec", 10.f);
 
         //現在の最高称号の表示
-        m_certificationLayout = (LinearLayout)findViewById(R.id.max_now_layout);
-        TextView certificationText = (TextView)findViewById(R.id.max_now_text);
+        m_certificationLayout = findViewById(R.id.max_now_layout);
+        TextView certificationText = findViewById(R.id.max_now_text);
         certificationText.setText(getString(R.string.certification, preTitle));
-        Button initializeButton = (Button)findViewById(R.id.initialize_button);
+        Button initializeButton = findViewById(R.id.initialize_button);
         initializeButton.setOnClickListener(this);
         if(!sMastery.equals(entryMode) || preTitle.equals(""))
             m_certificationLayout.setVisibility(View.INVISIBLE);
 
-        TextView accuracyRateText = (TextView)findViewById(R.id.accuracy_rate);
+        TextView accuracyRateText = findViewById(R.id.accuracy_rate);
         double rate = ((double)correctSize/(double)questionSize)*100d;
         accuracyRateText.setText(getString(R.string.rate1, correctSize, questionSize, String.valueOf((int)rate)));
-        TextView answerTimeText = (TextView)findViewById(R.id.answer_time);
+        TextView answerTimeText = findViewById(R.id.answer_time);
         long lAnswerTime = timeResult/(long)questionSize;
         String answerTime = m_dataFormat.format(lAnswerTime);
         answerTimeText.setText(answerTime);
 
         double per_sec = (double)lAnswerTime/1000d;
-        Button backButton = (Button)findViewById(R.id.back_button);
+        Button backButton = findViewById(R.id.back_button);
         backButton.setOnClickListener(this);
 
-        Button checkButton = (Button)findViewById(R.id.check_button);
+        Button checkButton = findViewById(R.id.check_button);
         checkButton.setOnClickListener(this);
 
         String level = "Level";
@@ -132,7 +132,7 @@ public class ResultActivity extends Activity implements View.OnClickListener {
                 message = getString(R.string.one_more_push);
         }
 
-        TextView resultText = (TextView)findViewById(R.id.result);
+        TextView resultText = findViewById(R.id.result);
         if(sMastery.equals(entryMode))
         {
             Cursor cursor = db.rawQuery(sql, null);
@@ -163,9 +163,9 @@ public class ResultActivity extends Activity implements View.OnClickListener {
                         dialog.setTitle(getString(R.string.update_record_title));
                         LayoutInflater inflater = getLayoutInflater();
                         View view = inflater.inflate(R.layout.update_record_layout, null);
-                        TextView highScoreText = (TextView)view.findViewById(R.id.record);
+                        TextView highScoreText = view.findViewById(R.id.record);
                         highScoreText.setText(getString(R.string.record, m_newRecord));
-                        ImageButton shareButton = (ImageButton)view.findViewById(R.id.twitter);
+                        ImageButton shareButton = view.findViewById(R.id.twitter);
                         shareButton.setOnClickListener(this);
                         dialog.setView(view);
                         dialog.setPositiveButton("Close", new DialogInterface.OnClickListener() {
@@ -204,7 +204,7 @@ public class ResultActivity extends Activity implements View.OnClickListener {
        // }
 
         //バナー広告
-        m_AdView = (AdView) findViewById(R.id.adView5);
+        m_AdView = findViewById(R.id.adView5);
         AdRequest adRequest = new AdRequest.Builder().build();
         m_AdView.loadAd(adRequest);
 
@@ -307,10 +307,7 @@ public class ResultActivity extends Activity implements View.OnClickListener {
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK) {
-            return true;
-        }
-        return super.onKeyDown(keyCode, event);
+        return keyCode == KeyEvent.KEYCODE_BACK || super.onKeyDown(keyCode, event);
     }
 
     private void induceReview()

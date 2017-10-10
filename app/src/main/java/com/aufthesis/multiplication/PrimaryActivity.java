@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -47,9 +46,9 @@ public class PrimaryActivity extends Activity implements CompoundButton.OnChecke
         Intent intent = getIntent();
         m_entryMode = intent.getExtras().getString(getString(R.string.keyword1));
 
-        TextView title = (TextView)findViewById(R.id.title);
+        TextView title = findViewById(R.id.title);
 
-        Switch randomSwitch = (Switch)findViewById(R.id.isRandom);
+        Switch randomSwitch = findViewById(R.id.isRandom);
         if(m_entryMode.equals(getString(R.string.primary)))
         {
             title.setText(getString(R.string.learn));
@@ -59,7 +58,7 @@ public class PrimaryActivity extends Activity implements CompoundButton.OnChecke
         {
             title.setText(getString(R.string.practice));
             randomSwitch.setOnCheckedChangeListener(this);
-            ImageView modeImage = (ImageView)findViewById(R.id.mode_image);
+            ImageView modeImage = findViewById(R.id.mode_image);
             modeImage.setImageResource(R.drawable.skills1);
         }
 
@@ -70,7 +69,7 @@ public class PrimaryActivity extends Activity implements CompoundButton.OnChecke
             items[i-1] = getString(R.string.timestables, i);
         }
 
-        ListView timesTablesListView =(ListView)findViewById(R.id.list_TimesTables);
+        ListView timesTablesListView =findViewById(R.id.list_TimesTables);
         ArrayAdapter<String> adapter =
                 new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items)
                 {
@@ -114,7 +113,7 @@ public class PrimaryActivity extends Activity implements CompoundButton.OnChecke
         });
 
         //バナー広告
-        m_AdView = (AdView) findViewById(R.id.adView3);
+        m_AdView = findViewById(R.id.adView3);
         AdRequest adRequest = new AdRequest.Builder().build();
         m_AdView.loadAd(adRequest);
 
