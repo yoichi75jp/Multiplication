@@ -16,7 +16,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
@@ -142,7 +141,7 @@ public class LearnActivity extends Activity implements View.OnClickListener {
         MobileAds.initialize(this, "ca-app-pub-1485554329820885~5867720659");
 
         //バナー広告
-        m_AdView = (AdView) findViewById(R.id.adView4);
+        m_AdView = findViewById(R.id.adView4);
         AdRequest adRequest = new AdRequest.Builder().build();
         m_AdView.loadAd(adRequest);
 

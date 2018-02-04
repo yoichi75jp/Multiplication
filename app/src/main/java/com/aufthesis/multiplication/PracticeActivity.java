@@ -169,12 +169,12 @@ public class PracticeActivity extends Activity implements View.OnClickListener, 
         m_wrongCountText = findViewById(R.id.wrong_count);
         m_wrongCountText.setText(String.valueOf(0));
 
-        m_correctLayout = (LinearLayout)findViewById(R.id.correct_layout);
-        m_wrongLayout = (LinearLayout)findViewById(R.id.wrong_layout);
+        m_correctLayout = findViewById(R.id.correct_layout);
+        m_wrongLayout = findViewById(R.id.wrong_layout);
         m_correctLayout.setVisibility(View.INVISIBLE);
         m_wrongLayout.setVisibility(View.INVISIBLE);
 
-        m_remCountText = (TextView)findViewById(R.id.count_remaining);
+        m_remCountText = findViewById(R.id.count_remaining);
 
         //計算式リスト作成
         this.createFormulaList();
@@ -291,7 +291,7 @@ public class PracticeActivity extends Activity implements View.OnClickListener, 
         m_num2Text.setBackgroundColor(Color.parseColor("#FFE4E1"));
 
         // Button制御
-        Button button = (Button)findViewById(R.id.ok);
+        Button button = findViewById(R.id.ok);
         button.setVisibility(View.INVISIBLE);
     }
 
