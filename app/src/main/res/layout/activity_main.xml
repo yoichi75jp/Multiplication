@@ -42,14 +42,15 @@
         android:layout_marginBottom="10dp"
         android:background="#191970"
         android:textColor="#33B5E5"
-        android:id="@+id/primary"
-        />
+        android:id="@+id/primary"/>
+
     <ImageView
         android:id="@+id/logo"
         android:contentDescription="@null"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/timestable_logo"
+        android:src="@drawable/header_image"
+        android:paddingBottom="10dp"
         android:layout_above="@id/primary"/>
 
     <Button
